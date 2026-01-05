@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi Penataan PKL Jalan Pattimura</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+            padding: 60px;
+            min-height: 600px;
+            position: relative;
+        }
+
+        .slide.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .slide h2 {
+            color: #764ba2;
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .slide h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .slide p, .slide li {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .slide ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .slide li {
+            margin-bottom: 12px;
+        }
+
+        .team-member {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-counter {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .title-slide {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+
+        .title-slide h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .title-slide .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin-bottom: 40px;
+        }
+
+        .team-section {
+            margin-top: 40px;
+        }
+
+        .reference {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Slide 1: Judul & Nama Kelompok -->
+        <div class="slide active title-slide">
+            <h1>Analisis Penataan PKL Jalan Pattimura Kediri</h1>
+            <p class="subtitle">Dalam Perspektif Pendidikan Karakter</p>
+            
+            <div class="team-section">
+                <h3>Disusun Oleh:</h3>
+                <div class="team-member">
+                    <span>An Nafi Juta Jack Vucend</span>
+                    <span>108092500001</span>
+                </div>
+                <div class="team-member">
+                    <span>Amanda Aisyah Zazqia Arifin</span>
+                    <span>108092530004</span>
+                </div>
+                <div class="team-member">
+                    <span>Fitriani Latifah</span>
+                    <span>108092530005</span>
+                </div>
+                <div class="team-member">
+                    <span>Khansa Aufa Rafiqi</span>
+                    <span>108092500008</span>
+                </div>
+                <div class="team-member">
+                    <span>Mohammad Ilham Habidi</span>
+                    <span>108092500034</span>
+                </div>
+            </div>
+            
+            <p style="margin-top: 40px; font-weight: bold;">Program Studi Teknologi Informasi<br>Telkom University Surabaya<br>2025</p>
+        </div>
+
+        <!-- Slide 2: Latar Belakang -->
+        <div class="slide">
+            <h2>Latar Belakang Permasalahan</h2>
+            
+            <p>Kota Kediri, khususnya di Jalan Pattimura, menghadapi kompleksitas penataan Pedagang Kaki Lima (PKL) yang menyebabkan terganggunya fungsi trotoar dan arus lalu lintas.</p>
+            
+            <h3>Akar Permasalahan Multidimensional:</h3>
+            
+            <ul>
+                <li><strong>Faktor Teknis Infrastruktur:</strong> Dimensi trotoar yang terbatas tidak memadai untuk menampung aktivitas berdagang sekaligus pejalan kaki, menciptakan penyempitan jalur akses publik.</li>
+                
+                <li><strong>Faktor Sosio-Ekonomi:</strong> Ketergantungan ekonomi kuat pada lokasi strategis. Pedagang berkumpul di titik-titik strategis secara tidak terkontrol demi keuntungan ekonomi.</li>
+                
+                <li><strong>Kendala Tata Kelola dan Birokrasi:</strong> Koordinasi lintas instansi (Satpol PP dan Dinas Koperasi) menghadapi tantangan menyelaraskan penegakan aturan dengan keberlangsungan hidup pedagang.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3: Solusi yang Sudah Ada -->
+        <div class="slide">
+            <h2>Solusi yang Sudah Dilakukan</h2>
+            
+            <p>Pemerintah Kota Kediri telah menunjukkan responsivitas dengan pendekatan berorientasi pada ketertiban publik:</p>
+            
+            <h3>1. Penertiban Fisik (Jangka Pendek)</h3>
+            <p>Satpol PP melakukan sosialisasi dan penertiban berkala terhadap lapak yang melebihi batas ukuran maksimal 7 meter untuk mencegah gangguan fungsi jalan yang parah.</p>
+            
+            <h3>2. Pengaturan Zonasi Waktu</h3>
+            <p>Penerapan pengaturan jam operasional dan zonasi tempat berjualan sebagai solusi win-win. Tujuannya meminimalisir dampak kemacetan di jam sibuk tanpa mematikan usaha pedagang.</p>
+            
+            <h3>3. Rencana Relokasi (Jangka Panjang)</h3>
+            <p>Pemindahan pedagang ke pusat-pusat kuliner terpadu atau pasar yang lebih representatif untuk memastikan pedagang dapat mencari nafkah dengan tertib tanpa mengokupasi fasilitas umum.</p>
+        </div>
+
+        <!-- Slide 4: Dampak dari Solusi -->
+        <div class="slide">
+            <h2>Dampak dari Solusi yang Ada</h2>
+            
+            <div class="highlight">
+                <h3>Dampak Positif:</h3>
+                <ul>
+                    <li>Berkurangnya gangguan fungsi jalan dan trotoar</li>
+                    <li>Terciptanya ketertiban jam operasional</li>
+                    <li>Minimalisasi kemacetan di jam sibuk</li>
+                    <li>Terbukanya dialog antara pemerintah dan pedagang</li>
+                </ul>
+            </div>
+            
+            <h3>Tantangan yang Masih Dihadapi:</h3>
+            <ul>
+                <li><strong>Implementasi Konsisten:</strong> Diperlukan pengawasan berkelanjutan agar pedagang tetap mematuhi batas ukuran lapak 7 meter</li>
+                
+                <li><strong>Resistensi Relokasi:</strong> Pedagang khawatir kehilangan pelanggan tetap jika dipindahkan dari lokasi strategis</li>
+                
+                <li><strong>Koordinasi Stakeholder:</strong> Perlu penguatan sinergi antara Satpol PP, Dinas Koperasi, dan paguyuban pedagang</li>
+            </ul>
+        </div>
+
+        <!-- Slide 5: Metode Pendekatan -->
+        <div class="slide">
+            <h2>Metode Pendekatan</h2>
+            
+            <h3>1. Pendekatan Kualitatif Deskriptif</h3>
+            <p>Menggambarkan secara sistematis fakta dan karakteristik kondisi fisik dan sosial di Jalan Pattimura secara faktual dan cermat.</p>
+            
+            <h3>2. Pendekatan Studi Kasus (Case Study)</h3>
+            <p>Memusatkan perhatian pada penataan PKL di lokasi spesifik Jalan Pattimura secara intensif dan mendetail untuk memperoleh gambaran yang utuh.</p>
+            
+            <h3>3. Pendekatan Pendidikan Karakter</h3>
+            <p>Digunakan sebagai pisau analisis utama untuk menelaah nilai-nilai moral dan etika yang mendasari perilaku setiap stakeholder:</p>
+            <ul>
+                <li><strong>Tanggung Jawab:</strong> Kesadaran akan kewajiban menjaga fasilitas umum</li>
+                <li><strong>Kerjasama (Gotong Royong):</strong> Sinergi antara pemerintah dan warga</li>
+                <li><strong>Integritas:</strong> Kejujuran dan konsistensi dalam mematuhi aturan</li>
+            </ul>
+        </div>
+
+        <!-- Slide 6: Kesimpulan -->
+        <div class="slide">
+            <h2>Kesimpulan</h2>
+            
+            <p>Permasalahan PKL di Jalan Pattimura menggambarkan kompleksitas tantangan tata kelola ruang publik yang tidak bisa diselesaikan hanya dengan pendekatan fisik.</p>
+            
+            <div class="highlight">
+                <h3>Pembelajaran dari Perspektif Pendidikan Karakter:</h3>
+                <ul>
+                    <li><strong>Integritas:</strong> Pentingnya mematuhi batasan aturan (ukuran lapak dan zonasi)</li>
+                    <li><strong>Kerjasama:</strong> Sinergi antar-stakeholder (Pemerintah, Paguyuban, Warga) sebagai kunci solusi jangka panjang</li>
+                    <li><strong>Tanggung Jawab:</strong> Komitmen bersama untuk menciptakan kota yang harmonis dan manusiawi</li>
+                </ul>
+            </div>
+            
+            <h3>Rekomendasi:</h3>
+            <ul>
+                <li>Peningkatan koordinasi antara Dinas Koperasi dan Satpol PP</li>
+                <li>Aktivasi mekanisme kontrol internal dalam paguyuban</li>
+                <li>Partisipasi aktif masyarakat dalam pengawasan</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7: Referensi -->
+        <div class="slide">
+            <h2>Referensi</h2>
+            
+            <div class="reference">
+                <p><strong>Crisnaningrum, D. W. (2020).</strong> <em>Peran Paguyuban Jokorio Dalam Mewujudkan Kerukunan Antar Pedagang Kaki Lima Depan Perpustakaan IAIN Kediri (Perspektif Fungsionalisme Struktural)</em> (Skripsi). Kediri: Institut Agama Islam Negeri (IAIN) Kediri.</p>
+            </div>
+            
+            <div class="reference">
+                <p><strong>Pemerintah Kota Kediri. (2014).</strong> <em>Peraturan Daerah Kota Kediri Nomor 7 Tahun 2014 tentang Penataan dan Pemberdayaan Pedagang Kaki Lima</em>. Kediri: Sekretariat Daerah.</p>
+            </div>
+            
+            <div class="reference">
+                <p><strong>Virginiawati, L. (2020).</strong> <em>Tinjauan Maslahah Mursalah Terhadap Penerapan Perda Nomor 7 Tahun 2014 Tentang Penataan dan Pemberdayaan Pedagang Kaki Lima Pada Pedagang Kaki Lima di Jalan Joyoboyo dan Jalan Hayam Wuruk Kota Kediri</em> (Skripsi). Kediri: Institut Agama Islam Negeri (IAIN) Kediri.</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" onclick="changeSlide(-1)">← Sebelumnya</button>
+            <span class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">7</span></span>
+            <button id="nextBtn" onclick="changeSlide(1)">Selanjutnya →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        
+        document.getElementById('totalSlides').textContent = totalSlides;
+        
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > totalSlides) {
+                currentSlide = totalSlides;
+            }
+            if (n < 1) {
+                currentSlide = 1;
+            }
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide - 1].classList.add('active');
+            
+            document.getElementById('currentSlide').textContent = currentSlide;
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+        }
+        
+        function changeSlide(direction) {
+            currentSlide += direction;
+            showSlide(currentSlide);
+        }
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+        
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
